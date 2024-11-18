@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoTube</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <h1 class="logo">NeoVideo</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#upload">Upload</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#account">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="upload" class="upload-section">
+        <h2>Post a Video</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="text" id="videoTitle" placeholder="Enter video title" required>
+            <input type="file" id="videoFile" name="video" accept="video/*" required>
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+
+    <section id="videos" class="video-gallery">
+        <h2>Explore Videos</h2>
+        <div id="videoList" class="video-list"></div>
+    </section>
+
+    <section id="account" class="account-section">
+        <h2>Manage Account</h2>
+        <p>Login or Sign Up to upload and interact with videos.</p>
+        <button id="loginBtn">Login</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
